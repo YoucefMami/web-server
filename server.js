@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 // variable in upper case ie it should be constant
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 var middleware = require('./middleware.js');
 
